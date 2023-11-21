@@ -21,7 +21,7 @@ export const validate = (validation: RunnableValidationChains<ValidationChain>) 
       entityError.errors[key] = errorsObject[key]
     }
 
-    next(entityError)
+    // next(entityError)
 
     res.status(422).json({ errors: errorsObject })
   }
