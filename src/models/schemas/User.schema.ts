@@ -29,7 +29,7 @@ export default class User {
   password: string
   created_at: Date
   updated_at: Date
-  email_verify_token: string
+  email_verify_token?: string
   forgot_password_token: string
   verify: UserVerityStatus
 
